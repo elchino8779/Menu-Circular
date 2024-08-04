@@ -1,0 +1,462 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #151520;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background-color: transparent;
+  box-shadow: 0 0 10px transparent;
+  transition: 0.4s ease-in-out;
+  position: relative;
+}
+
+.icon-menu {
+  position: absolute;
+  width: 60px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.15s ease-in-out;
+  z-index: 100;
+}
+
+.icon-menu:hover {
+  filter: drop-shadow(0 0 10px #2c85ca);
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.icon-menu:active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.icon-facebook {
+  position: absolute;
+  width: 80px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  animation-delay: 0s;
+  transition: 0.15s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.icon-facebook:hover {
+  filter: drop-shadow(0 0 10px #2e64b8);
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.icon-facebook:active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.icon-instagram {
+  position: absolute;
+  width: 80px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  animation-delay: 0.1s;
+  transition: 0.15s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.icon-instagram:hover {
+  filter: drop-shadow(0 0 10px #bb316e);
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.icon-instagram:active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.icon-messenger {
+  position: absolute;
+  width: 80px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  animation-delay: 0.2s;
+  transition: 0.15s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.icon-messenger:hover {
+  filter: drop-shadow(0 0 10px #176dae);
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.icon-messenger:active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.icon-whatsapp {
+  position: absolute;
+  width: 80px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  animation-delay: 0.3s;
+  transition: 0.15s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.icon-whatsapp:hover {
+  filter: drop-shadow(0 0 10px #33b249);
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.icon-whatsapp:active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.icon-twiter {
+  position: absolute;
+  width: 80px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  animation-delay: 0.4s;
+  transition: 0.15s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.icon-twiter:hover {
+  filter: drop-shadow(0 0 10px #369ada);
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.icon-twiter:active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.icon-discord {
+  position: absolute;
+  width: 80px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  animation-delay: 0.5s;
+  transition: 0.15s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.icon-discord:hover {
+  filter: drop-shadow(0 0 10px #5460b5);
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.icon-discord:active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.icon-linkedin {
+  position: absolute;
+  width: 80px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  animation-delay: 0.6s;
+  transition: 0.15s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.icon-linkedin:hover {
+  filter: drop-shadow(0 0 10px #2175b5);
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.icon-linkedin:active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.icon-twitch {
+  position: absolute;
+  width: 80px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  animation-delay: 0.7s;
+  transition: 0.15s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.icon-twitch:hover {
+  filter: drop-shadow(0 0 10px #6737b0);
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.icon-twitch:active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/*FadeIn*/
+
+@keyframes facebook {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    top: 0px;
+  }
+}
+
+@keyframes instagram {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    top: 42px;
+    left: 240px;
+  }
+}
+
+@keyframes messenger {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    left: 280px;
+  }
+}
+
+@keyframes whatsapp {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    left: 240px;
+    top: 240px;
+  }
+}
+
+@keyframes twiter {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    top: 280px;
+  }
+}
+
+@keyframes discord {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    left: 40px;
+    top: 240px;
+  }
+}
+
+@keyframes linkedin {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    left: 0;
+  }
+}
+
+@keyframes twitch {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    top: 40px;
+    left: 40px;
+  }
+}
+
+/*FadeOut*/
+
+@keyframes facebook-out {
+  0% {
+    opacity: 1;
+    visibility: visible;
+    top: 0px;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes instagram-out {
+  0% {
+    opacity: 1;
+    visibility: visible;
+    top: 42px;
+    left: 240px;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes messenger-out {
+  0% {
+    opacity: 1;
+    visibility: visible;
+    left: 280px;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes whatsapp-out {
+  0% {
+    opacity: 1;
+    visibility: visible;
+    left: 240px;
+    top: 240px;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes twiter-out {
+  0% {
+    opacity: 1;
+    visibility: visible;
+    top: 280px;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes discord-out {
+  0% {
+    opacity: 1;
+    visibility: visible;
+    left: 40px;
+    top: 240px;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes linkedin-out {
+  0% {
+    opacity: 1;
+    visibility: visible;
+    left: 0;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes twitch-out {
+  0% {
+    opacity: 1;
+    visibility: visible;
+    top: 40px;
+    left: 40px;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
